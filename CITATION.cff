@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Amine-Wash CO2 Capture Digital Twin"
+abstract: >-
+  A research-grade Python implementation of a post-combustion CO2 capture
+  system using aqueous amine solvents. Couples a rate-based 1-D plug-flow
+  absorber (Onda 1968 mass transfer, Aboudheir 2003 kinetics, DeCoursey 1974
+  enhancement factor) with an equilibrium-stage stripper and cross heat
+  exchanger. Four amine solvents are supported (MEA, DEA, MDEA, PZ) with
+  literature-validated kinetic and thermodynamic parameters. Default
+  industrial case (600 MW coal plant, 30 wt% MEA) gives 90% capture rate
+  at 3.40 GJ/t CO2 specific reboiler duty — within the published industrial
+  range of 3.5-3.7 GJ/t (IEAGHG 2014/03, Aker Just Catch).
+authors:
+  - family-names: Augustine
+    given-names: Neel
+    affiliation: "Process Engineer | Hydrogen, Syngas & CCS Technologies"
+type: software
+license: MIT
+keywords:
+  - co2-capture
+  - amine-scrubbing
+  - post-combustion-ccs
+  - mea
+  - digital-twin
+  - process-simulation
+  - chemical-engineering
+  - reactor-modeling
+  - power-plant
+  - decarbonization
+date-released: 2026-05-01
