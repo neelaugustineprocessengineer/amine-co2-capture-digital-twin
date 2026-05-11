@@ -2,7 +2,7 @@
 
 # 🌫️ Amine-Wash CO₂ Capture Digital Twin
 
-### *A research-grade simulation platform for post-combustion CO₂ capture using aqueous amine solvents*
+### *A simulation platform for post-combustion CO₂ capture using aqueous amine solvents*
 
 [![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
