@@ -307,28 +307,28 @@ The model rests on a deep amine-CO₂-capture literature backbone - these are th
 
 **Kinetics**
 * Aboudheir, A. et al. *Chem. Eng. Sci.* **58**, 5195–5210 (2003) - MEA termolecular kinetics
-* Caplow, M. *J. Am. Chem. Soc.* **90**, 6795–6803 (1968) - original zwitterion mechanism
-* Danckwerts, P. V. *Chem. Eng. Sci.* **34**, 443–446 (1979) - termolecular variant
+* Caplow, M. *J. Am. Chem. Soc.* **90**, 6795-6803 (1968) - original zwitterion mechanism
+* Danckwerts, P. V. *Chem. Eng. Sci.* **34**, 443-446 (1979) - termolecular variant
 
 **Thermodynamics & VLE**
-* Aronu, U. E. et al. *Chem. Eng. Sci.* **66**, 6393–6406 (2011) - MEA-CO₂-H₂O equilibrium
-* Jou, F.-Y.; Mather, A. E.; Otto, F. D. *Can. J. Chem. Eng.* **73**, 140–147 (1995) - VLE measurements
+* Aronu, U. E. et al. *Chem. Eng. Sci.* **66**, 6393-6406 (2011) - MEA-CO₂-H₂O equilibrium
+* Jou, F.-Y.; Mather, A. E.; Otto, F. D. *Can. J. Chem. Eng.* **73**, 140-147 (1995) - VLE measurements
 * Posey, M. L.; Tapperson, K. G.; Rochelle, G. T. *Gas Sep. Purif.* **10**, 181-186 (1996)
 
 **Mass transfer & column hydrodynamics**
 * Onda, K.; Takeuchi, H.; Okumoto, Y. *J. Chem. Eng. Japan* **1**, 56-62 (1968) - packed-column correlations
-* DeCoursey, W. J. *Chem. Eng. Sci.* **29**, 1867–1872 (1974) - enhancement factor
+* DeCoursey, W. J. *Chem. Eng. Sci.* **29**, 1867-1872 (1974) - enhancement factor
 
 **Process design & integration**
 * Kohl, A. L.; Nielsen, R. B. *Gas Purification*, 5th ed., Gulf Publishing (1997) - classical reference
-* Notz, R.; Mangalapally, H. P.; Hasse, H. *Int. J. Greenhouse Gas Control* **6**, 84–112 (2012) - pilot-plant data
-* Plaza, J. M.; Van Wagener, D.; Rochelle, G. T. *Chem. Eng. J.* **162**, 718–728 (2010)
-* Mac Dowell, N. et al. *Energy Environ. Sci.* **6**, 2493–2511 (2013) - integration review
+* Notz, R.; Mangalapally, H. P.; Hasse, H. *Int. J. Greenhouse Gas Control* **6**, 84-112 (2012) - pilot-plant data
+* Plaza, J. M.; Van Wagener, D.; Rochelle, G. T. *Chem. Eng. J.* **162**, 718-728 (2010)
+* Mac Dowell, N. et al. *Energy Environ. Sci.* **6**, 2493-2511 (2013) - integration review
 
 **Industrial benchmarks**
 * IEAGHG report 2014/03 - *Evaluation and analysis of water usage of power plants with CO₂ capture*
 * Aker Carbon Capture - *Just Catch™ technology data sheet* (2022)
-* SaskPower Boundary Dam (Cansolv DC-103) - first commercial CCS at scale (2014–)
+* SaskPower Boundary Dam (Cansolv DC-103) - first commercial CCS at scale (2014-)
 
 ---
 
