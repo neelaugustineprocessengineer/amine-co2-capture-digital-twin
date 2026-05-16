@@ -20,21 +20,21 @@
 
 ## 📋 Overview
 
-This repository implements a **physically-rigorous digital twin** of an industrial post-combustion CO₂ capture system using aqueous amine solvents — the most mature CCS technology, deployed at commercial scale at SaskPower's Boundary Dam (since 2014) and NRG's Petra Nova (2017–2020).
+This repository implements a **physically-rigorous digital twin** of an industrial post-combustion CO₂ capture system using aqueous amine solvents - the most mature CCS technology, deployed at commercial scale at SaskPower's Boundary Dam (since 2014) and NRG's Petra Nova (2017-2020).
 
 The model couples:
 
-* **Rate-based absorber column** — 1-D pseudo-homogeneous PFR with two-film mass transfer, Hatta-modulus reaction enhancement (DeCoursey 1974), and energy balance with absorption heat
+* **Rate-based absorber column** - 1-D pseudo-homogeneous PFR with two-film mass transfer, Hatta-modulus reaction enhancement (DeCoursey 1974), and energy balance with absorption heat
 * **Equilibrium-stage stripper** with stage-by-stage VLE and full energy balance (reaction heat, latent heat of stripping steam, sensible heat)
-* **Lean–rich cross heat exchanger** for energy integration
+* **Lean-rich cross heat exchanger** for energy integration
 * **Outer convergence loop** linking absorber, HX, and stripper for steady-state design
 
 It is intended for:
 
-* 🎓 **Graduate teaching** — a fully-documented, citable reference for amine-wash CCS modelling
-* 🔬 **Research** — solvent screening (MEA / DEA / MDEA / PZ), L/G optimization, sensitivity analysis
-* ⚙️ **Industrial first-pass design** — column sizing, reboiler-duty estimation, capture-rate prediction
-* 🚀 **Digital-twin prototyping** — building block for online monitoring and process optimization
+* 🎓 **Graduate teaching** - a fully-documented, citable reference for amine-wash CCS modelling
+* 🔬 **Research** - solvent screening (MEA / DEA / MDEA / PZ), L/G optimization, sensitivity analysis
+* ⚙️ **Industrial first-pass design** - column sizing, reboiler-duty estimation, capture-rate prediction
+* 🚀 **Digital-twin prototyping** - building block for online monitoring and process optimization
 
 ---
 
@@ -44,7 +44,7 @@ It is intended for:
 <tr><td>
 
 **🧪 Four amine solvents**
-MEA (industry baseline), DEA (secondary), MDEA (tertiary, low-energy), PZ (fast kinetics) — selectable at runtime, each with literature-validated kinetic and thermodynamic parameters.
+MEA (industry baseline), DEA (secondary), MDEA (tertiary, low-energy), PZ (fast kinetics) - selectable at runtime, each with literature-validated kinetic and thermodynamic parameters.
 
 </td><td>
 
@@ -55,7 +55,7 @@ Onda (1968) packed-column correlations for k_L, k_G and wetted area; Aboudheir (
 <tr><td>
 
 **♻️ Equilibrium-stage stripper**
-Stage-by-stage VLE solution with reboiler-duty decomposition into reaction, latent, and sensible heat — the industry-standard breakdown.
+Stage-by-stage VLE solution with reboiler-duty decomposition into reaction, latent, and sensible heat - the industry-standard breakdown.
 
 </td><td>
 
@@ -96,7 +96,7 @@ python amine_co2_capture.py
 
 This runs the default 600 MW coal-plant scenario with 30 wt% MEA and produces:
 * Console summary (capture rate, loadings, reboiler duty, KPIs)
-* `amine_capture_results.png` — 6-panel figure (absorber + stripper profiles)
+* `amine_capture_results.png` - 6-panel figure (absorber + stripper profiles)
 
 ### With sensitivity scans
 
@@ -209,7 +209,7 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the detailed module-by-mo
 
 ## 📚 Theoretical Background
 
-### Reaction chemistry — zwitterion mechanism (MEA)
+### Reaction chemistry - zwitterion mechanism (MEA)
 
 For primary and secondary amines, the absorption of CO₂ proceeds via the zwitterion mechanism (Caplow 1968, Danckwerts 1979):
 
@@ -225,7 +225,7 @@ The forward second-order rate constant for MEA (Aboudheir 2003):
 
 $$k_2 = 4.61\times10^9 \exp\!\left(-\frac{4412}{T}\right) \quad [\text{m}^3/(\text{kmol}\cdot\text{s})]$$
 
-### Mass transfer — two-film with reaction enhancement
+### Mass transfer - two-film with reaction enhancement
 
 The local CO₂ flux from gas to liquid:
 
@@ -292,43 +292,43 @@ pip install -r requirements.txt
 * [x] Four amine solvents with literature-validated parameters
 * [x] L/G and amine-comparison sensitivity scans
 * [x] Energy-balance decomposition (reaction / latent / sensible)
-* [ ] Amine blends (MEA-PZ, MDEA-PZ — industrially dominant)
+* [ ] Amine blends (MEA-PZ, MDEA-PZ - industrially dominant)
 * [ ] Validation against Notz 2012 pilot-plant data (full T-profile match)
 * [ ] Solvent degradation kinetics (oxidative + thermal)
 * [ ] Inter-cooled absorber (multi-stage with intermediate cooling)
 * [ ] Techno-economic analysis layer (CAPEX + OPEX → LCOC $/t)
-* [ ] Extension to **low-temperature shift catalysts** (same Cu/ZnO platform — synergy with the [methanol synthesis digital twin](https://github.com/neelaugustineprocessengineer/Methanol-Synthesis-Reactor-Digital-Twin))
+* [ ] Extension to **low-temperature shift catalysts** (same Cu/ZnO platform - synergy with the [methanol synthesis digital twin](https://github.com/neelaugustineprocessengineer/Methanol-Synthesis-Reactor-Digital-Twin))
 
 ---
 
 ## 📖 References
 
-The model rests on a deep amine-CO₂-capture literature backbone — these are the primary sources:
+The model rests on a deep amine-CO₂-capture literature backbone - these are the primary sources:
 
 **Kinetics**
-* Aboudheir, A. et al. *Chem. Eng. Sci.* **58**, 5195–5210 (2003) — MEA termolecular kinetics
-* Caplow, M. *J. Am. Chem. Soc.* **90**, 6795–6803 (1968) — original zwitterion mechanism
-* Danckwerts, P. V. *Chem. Eng. Sci.* **34**, 443–446 (1979) — termolecular variant
+* Aboudheir, A. et al. *Chem. Eng. Sci.* **58**, 5195–5210 (2003) - MEA termolecular kinetics
+* Caplow, M. *J. Am. Chem. Soc.* **90**, 6795–6803 (1968) - original zwitterion mechanism
+* Danckwerts, P. V. *Chem. Eng. Sci.* **34**, 443–446 (1979) - termolecular variant
 
 **Thermodynamics & VLE**
-* Aronu, U. E. et al. *Chem. Eng. Sci.* **66**, 6393–6406 (2011) — MEA-CO₂-H₂O equilibrium
-* Jou, F.-Y.; Mather, A. E.; Otto, F. D. *Can. J. Chem. Eng.* **73**, 140–147 (1995) — VLE measurements
-* Posey, M. L.; Tapperson, K. G.; Rochelle, G. T. *Gas Sep. Purif.* **10**, 181–186 (1996)
+* Aronu, U. E. et al. *Chem. Eng. Sci.* **66**, 6393–6406 (2011) - MEA-CO₂-H₂O equilibrium
+* Jou, F.-Y.; Mather, A. E.; Otto, F. D. *Can. J. Chem. Eng.* **73**, 140–147 (1995) - VLE measurements
+* Posey, M. L.; Tapperson, K. G.; Rochelle, G. T. *Gas Sep. Purif.* **10**, 181-186 (1996)
 
 **Mass transfer & column hydrodynamics**
-* Onda, K.; Takeuchi, H.; Okumoto, Y. *J. Chem. Eng. Japan* **1**, 56–62 (1968) — packed-column correlations
-* DeCoursey, W. J. *Chem. Eng. Sci.* **29**, 1867–1872 (1974) — enhancement factor
+* Onda, K.; Takeuchi, H.; Okumoto, Y. *J. Chem. Eng. Japan* **1**, 56-62 (1968) - packed-column correlations
+* DeCoursey, W. J. *Chem. Eng. Sci.* **29**, 1867–1872 (1974) - enhancement factor
 
 **Process design & integration**
-* Kohl, A. L.; Nielsen, R. B. *Gas Purification*, 5th ed., Gulf Publishing (1997) — classical reference
-* Notz, R.; Mangalapally, H. P.; Hasse, H. *Int. J. Greenhouse Gas Control* **6**, 84–112 (2012) — pilot-plant data
+* Kohl, A. L.; Nielsen, R. B. *Gas Purification*, 5th ed., Gulf Publishing (1997) - classical reference
+* Notz, R.; Mangalapally, H. P.; Hasse, H. *Int. J. Greenhouse Gas Control* **6**, 84–112 (2012) - pilot-plant data
 * Plaza, J. M.; Van Wagener, D.; Rochelle, G. T. *Chem. Eng. J.* **162**, 718–728 (2010)
-* Mac Dowell, N. et al. *Energy Environ. Sci.* **6**, 2493–2511 (2013) — integration review
+* Mac Dowell, N. et al. *Energy Environ. Sci.* **6**, 2493–2511 (2013) - integration review
 
 **Industrial benchmarks**
-* IEAGHG report 2014/03 — *Evaluation and analysis of water usage of power plants with CO₂ capture*
-* Aker Carbon Capture — *Just Catch™ technology data sheet* (2022)
-* SaskPower Boundary Dam (Cansolv DC-103) — first commercial CCS at scale (2014–)
+* IEAGHG report 2014/03 - *Evaluation and analysis of water usage of power plants with CO₂ capture*
+* Aker Carbon Capture - *Just Catch™ technology data sheet* (2022)
+* SaskPower Boundary Dam (Cansolv DC-103) - first commercial CCS at scale (2014–)
 
 ---
 
@@ -351,16 +351,16 @@ If you use this code in academic work, please cite:
 
 ## 📜 License
 
-Released under the **MIT License** — see [`LICENSE`](LICENSE).
+Released under the **MIT License** - see [`LICENSE`](LICENSE).
 
 ---
 
 ## 👤 Author
 
-**Neel Augustine** — Process Engineer | Hydrogen, Syngas & CCS Technologies
+**Neel Augustine** - Process Engineer | Hydrogen, Syngas & CCS Technologies
 🔗 [GitHub](https://github.com/neelaugustineprocessengineer)
 
-> *"A clean, transparent, citable reference implementation for industrial amine-wash CO₂ capture — designed to support both teaching and industrial first-pass design."*
+> *"A clean, transparent, citable reference implementation for industrial amine-wash CO₂ capture - designed to support both teaching and industrial first-pass design."*
 
 ---
 
